@@ -9,7 +9,7 @@
     
 
 <?php 
- $conn = new PDO('mysql:host=localhost;dbname=hotel','root','Youssef02');
+ $conn = new PDO('mysql:host=localhost;dbname=hotel','root','');
  $id = $_GET['id_client'];
 
  
@@ -53,7 +53,7 @@
     $id2 =  $_GET['id1'];
  
     
-    $conn = new PDO('mysql:host=localhost;dbname=hotel','root','Youssef02');
+    $conn = new PDO('mysql:host=localhost;dbname=hotel','root','');
     
     $requete = $conn->prepare("UPDATE client SET cin = ? ,nom = ?
      , prenom = ? , email = ? , password = ? ,  age =? WHERE id_client=?");
