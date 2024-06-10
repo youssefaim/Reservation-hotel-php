@@ -14,7 +14,7 @@
 </head>
 <body>
     <?php
-        $conn = new PDO('mysql:host=localhost;dbname=hotel' ,'root','Youssef02');
+        $conn = new PDO('mysql:host=localhost;dbname=hotel' ,'root','');
         $dbtab = "client";
         $req = "SELECT * FROM $dbtab";
         $res = $conn->query($req);
