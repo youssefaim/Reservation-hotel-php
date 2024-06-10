@@ -59,7 +59,7 @@
         $password = $_POST['password'];
         $age = $_POST['age'];
 
-        $conn = new PDO('mysql:host=localhost;dbname=hotel' ,'root','Youssef02');
+        $conn = new PDO('mysql:host=localhost;dbname=hotel' ,'root','');
         $sqlState = $conn ->prepare('INSERT INTO client VALUES(null,?,?,?,?,?,?)');
         $sqlState ->execute([$cin,$nom,$prenom,$email,$password,$age]);
         header('Location:ex.php');
